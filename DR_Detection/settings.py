@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-i+4mijs7vqvx18zz08p93tldpvqr8$&u$x=df599h!y6p-a39^
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["localhost","127.0.0.1"]
 
 
 # Application definition
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "detector"
 ]
 
 MIDDLEWARE = [
@@ -116,6 +117,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 STATIC_URL = "static/"
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+]
+
+# Define the STATIC_ROOT setting for collecting static files in production
+STATIC_ROOT = BASE_DIR / "staticfiles"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
