@@ -2,3 +2,6 @@ temp_images/
 staticfiles/*
 __pycache__/
 static/*
+
+*.sqlite3
+*.pyc
