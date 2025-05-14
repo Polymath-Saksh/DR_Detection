@@ -27,13 +27,13 @@ else:
     SECRET_KEY = "django-insecure-i+4mijs7vqvx18zz08p93tldpvqr8$&u$x=df599h!y6p-a39^"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.getenv("DEBUG", "False") == "True"
 
 ALLOWED_HOSTS = ["localhost","127.0.0.1"]
 
 # Add your website to ALLOWED_HOSTS based on an environment variable
-if os.getenv("WEBSITE_HOSTNAME"):
-    ALLOWED_HOSTS.append(os.getenv("WEBSITE_HOSTNAME"))
+if os.getenv("AZURE_URL"):
+    ALLOWED_HOSTS.append(os.getenv("AZURE_URL"))
 
 # Application definition
 
