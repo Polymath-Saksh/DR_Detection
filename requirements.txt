@@ -3,3 +3,4 @@ pillow
 huggingface-hub
 django
 gunicorn
+whitenoise
