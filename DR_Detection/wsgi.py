@@ -11,6 +11,7 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
+settings_module = "dr_detection.production" if "WEBSITE_HOSTNAME" in os.environ else "dr_detection.settings"
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "DR_Detection.settings")
 
 application = get_wsgi_application()

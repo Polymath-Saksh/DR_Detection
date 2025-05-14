@@ -27,9 +27,9 @@ else:
     SECRET_KEY = "django-insecure-i+4mijs7vqvx18zz08p93tldpvqr8$&u$x=df599h!y6p-a39^"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.getenv("DEBUG", "False") == "True"
+DEBUG = True
 
-ALLOWED_HOSTS = ["localhost","127.0.0.1"]
+ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 
 # Add your website to ALLOWED_HOSTS based on an environment variable
 if os.getenv("AZURE_URL"):
@@ -125,13 +125,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 STATIC_URL = "static/"
-STATICFILES_DIRS = [
-    BASE_DIR / "static",
-]
+STATICFILES_DIRS = (str(BASE_DIR.joinpath('static')),)
+
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 # Define the STATIC_ROOT setting for collecting static files in production
-STATIC_ROOT = BASE_DIR / "staticfiles"
+STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
