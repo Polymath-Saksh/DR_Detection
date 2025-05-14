@@ -128,6 +128,7 @@ STATIC_URL = "static/"
 STATICFILES_DIRS = [
     BASE_DIR / "static",
 ]
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 # Define the STATIC_ROOT setting for collecting static files in production
 STATIC_ROOT = BASE_DIR / "staticfiles"
