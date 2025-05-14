@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -27,6 +28,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["localhost","127.0.0.1"]
 
+# Add your website to ALLOWED_HOSTS based on an environment variable
+if os.getenv("WEBSITE_HOSTNAME"):
+    ALLOWED_HOSTS.append(os.getenv("WEBSITE_HOSTNAME"))
 
 # Application definition
 
