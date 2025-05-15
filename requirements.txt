@@ -1,6 +1,11 @@
+torch
 torchvision
 pillow
 huggingface-hub
 django
 gunicorn
 whitenoise
+python-dotenv
+django-cors-headers
+django-storages
+azure-storage-blob
