@@ -1,18 +1,14 @@
 # Diabetic Retinopathy Detection ![Hugging Face](https://img.shields.io/badge/Hugging%20Face-FFD21E?logo=huggingface&logoColor=000) ![Django](https://img.shields.io/badge/Django-%23092E20.svg?logo=django&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff) 
 
 ## Introduction
-This repository contains the AI Ambassadors Project of Microsoft Learn Student Ambassadors. The project is about Diabetic Retinopathy Image Detection Model. The project is divided into two parts:
+This repository contains the AI Ambassadors Project of Microsoft Learn Student Ambassadors and Hacksagon @ IITM Gwalior. The project is about Diabetic Retinopathy Image Detection Model. The project is divided into two parts:
 
 - An EfficientB5 Model trained on the [APTOS 2019 dataset](https://www.kaggle.com/competitions/aptos2019-blindness-detection/). Achieved a Cohen Kappa Score of 0.96 on the complete dataset.
   [DR Detection Model | Huggingface](https://huggingface.co/sakshamkr1/ResNet50-APTOS-DR) 
 
 - A Web application, powered by Django to detect diabetic retinopathy from retinal fundus images using the trained ResNet50 model on HuggingFace. Hosted on Azure Web Apps.
 
-#### Live Application: [DR Detection | Azure](https://dr-huggingface-hwaeeth7hhetd9cb.eastus2-01.azurewebsites.net)
 
-## App Demo
-
-https://github.com/user-attachments/assets/6f1bfd94-2f8a-434d-8c81-f5cac1647801
 
 ## Presentation
 
@@ -63,6 +59,7 @@ For production deployment, configure Azure Web Apps or your preferred host.
 - [Rhythm Narang](https://github.com/rhythmnarang1)
 - [Hitesh Khatwani](https://github.com/Insane-HK)
 - [Vaishnavi Ahire](https://github.com/VaishnaviAhire)
+- [Aloukik Joshi](https://github.com/aloukikjoshi)
 
 ## Acknowledgments
 
