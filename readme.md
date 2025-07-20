@@ -1,7 +1,7 @@
 # Diabetic Retinopathy Detection ![Hugging Face](https://img.shields.io/badge/Hugging%20Face-FFD21E?logo=huggingface&logoColor=000) ![Django](https://img.shields.io/badge/Django-%23092E20.svg?logo=django&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff) ![Azure](https://img.shields.io/badge/azure-%230072C6.svg?style=for-the-badge&logo=microsoftazure&logoColor=white) ![Microsoft](https://img.shields.io/badge/Microsoft-0078D4?style=for-the-badge&logo=microsoft&logoColor=white)
 
 ## Introduction
-This repository contains the AI Ambassadors Project of Microsoft Learn Student Ambassadors and Hacksagon @ IITM Gwalior. The project is about Diabetic Retinopathy Image Detection Model. The project is divided into two parts:
+This repository contains the AI Ambassadors Project of Microsoft Learn Student Ambassadors and Hacksagon @ IIITM Gwalior. The project is about Diabetic Retinopathy Image Detection Model. The project is divided into two parts:
 
 - An EfficientB5 Model trained on the [APTOS 2019 dataset](https://www.kaggle.com/competitions/aptos2019-blindness-detection/). Achieved a Cohen Kappa Score of 0.96 on the complete dataset.
   [DR Detection Model | Huggingface](https://huggingface.co/sakshamkr1/ResNet50-APTOS-DR) 
